@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.piprastudio.dalal" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Dalal</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="16" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <config-file parent="/resources" target="./res/values/strings.xml">
+            <string name="fb_app_id">195612644565128</string>
+            <string name="fb_app_name">OfferWall</string>
+        </config-file>
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <plugin name="cordova-plugin-geolocation" spec="^4.0.1" />
+    <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
+    <plugin name="cordova-plugin-local-notification" spec="^0.9.0-beta.2" />
+    <plugin name="cordova-plugin-facebook4" spec="^2.0.0">
+        <variable name="APP_ID" value="195612644565128" />
+        <variable name="APP_NAME" value="OfferWall" />
+        <variable name="ANDROID_SDK_VERSION" value="4.+" />
+    </plugin>
+    <engine name="android" spec="^7.0.0" />
+</widget>

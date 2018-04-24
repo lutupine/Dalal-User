@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" href="css/swiper.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="cordova.js"></script>
+        <script src="js/locationservices.js"></script>
+        <link rel="stylesheet" href="css/mystyles.css">
+        <title>OfferApp</title>
+    </head>
+        
+    <body>
+        
+        <div class="row">
+            <h1>App Name</h1>
+        </div>        
+        
+        <div class="row" id="pagearea">
+            
+        </div>  
+
+        <button class="bottom_static" id="hot">
+            hot
+        </button>
+        
+        <button class="bottom_static" id="featured">
+            featured
+        </button>
+                
+        <button class="bottom_static" id="category">
+            category
+        </button>
+        
+        <button class="bottom_static" id="notification">
+            notification
+        </button>
+                
+        <button class="bottom_static" id="location">
+            location
+        </button>
+        
+        <button class="bottom_static" id="fb">
+                fb login
+        </button>
+
+    </body>
+    
+    <script>
+
+        var fbLoginSuccess = function (userData) {
+            alert("UserInfo: ", userData);
+        }
+
+        $("#fb").click(function(){
+            facebookConnectPlugin.login(["public_profile"], fbLoginSuccess,
+                function loginError (error) {
+                    alert(error)
+                }
+            );
+        });
+
+        /*
+
+        window.fbAsyncInit = function() {
+            FB.init({
+            appId      : '195612644565128',
+            cookie     : true,
+            xfbml      : true,
+            version    : 'v2.12'
+            });
+            
+            FB.AppEvents.logPageView();   
+            
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        $("#fb").click(function(){
+            FB.getLoginStatus(function(response) {
+                if (response.status === 'connected') {
+                    alert('Logged in.');
+                }
+                else {
+                    FB.login();
+                }
+            });
+        });    
+        */     
+                
+        $("#hot").click(function(){
+            $.ajax({
+                url: "http://mango-bd.com/API/",
+                data: '{"Limit":"2"}',
+                dataType: 'json',
+                headers: { 'Api': 'hot_deals', 'Method': 'list' },
+                processData: false,
+                type: "POST",
+                success: function(data) {
+                    alert(data);
+                    var deal_data = data.result;
+                    for (var i = 0; i < 2; i++) {
+                        var deal_title = deal_data[i].title;
+                        var deal_description = deal_data[i].description;
+                        var deal_image_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLRhPxq16yKv90eHGMRMLs3OR34tI0SaVyxZQ-sxNGeWLILYLb";
+                        var segment = '<div class="col-md-6 container-fluid deal_container"><div class="col-xs-3"><img id="deal_image" src="'+deal_image_url+'"></div><div class="col-xs-9"><h1 id="deal_title">'+deal_title+'</h1><p id="deal_description">'+deal_description+'</p></div></div>';
+                        $("#pagearea").append(segment);
+                    }
+                },
+                error: function(err){
+                    alert(err.status);
+                }
+            });
+        });  
+
+        $("#featured").click(function(){
+            $.ajax({
+                url: "http://mango-bd.com/API/",
+                data: '{"Limit":"2"}',
+                dataType: 'json',
+                headers: { 'Api': 'featured_deals', 'Method': 'list' },
+                processData: false,
+                type: "POST",
+                success: function(data) {
+                    alert(data);
+                    var deal_data = data.result;
+                    for (var i = 0; i < 2; i++) {
+                        var deal_title = deal_data[i].title;
+                        var deal_description = deal_data[i].description;
+                        var deal_image_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLRhPxq16yKv90eHGMRMLs3OR34tI0SaVyxZQ-sxNGeWLILYLb";
+                        var segment = '<div class="col-md-6 container-fluid deal_container"><div class="col-xs-3"><img id="deal_image" src="'+deal_image_url+'"></div><div class="col-xs-9"><h1 id="deal_title">'+deal_title+'</h1><p id="deal_description">'+deal_description+'</p></div></div>';
+                        $("#pagearea").append(segment);
+                    }
+                },
+                error: function(err){
+                    alert(err.status);
+                }
+            });
+        });
+                
+        $("#category").click(function(){
+            $.ajax({
+                url: "http://mango-bd.com/API/",
+                data: '{"Limit":"2"}',
+                dataType: 'json',
+                headers: { 'Api': 'categories', 'Method': 'list' },
+                processData: false,
+                type: "POST",
+                success: function(data) {
+                    alert(data);
+                    var deal_data = data.result;
+                    for (var i = 0; i < 2; i++) {
+                        var deal_title = deal_data[i].title;
+                        var deal_description = deal_data[i].description;
+                        var deal_image_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLRhPxq16yKv90eHGMRMLs3OR34tI0SaVyxZQ-sxNGeWLILYLb";
+                        var segment = '<div class="col-md-6 container-fluid deal_container"><div class="col-xs-3"><img id="deal_image" src="'+deal_image_url+'"></div><div class="col-xs-9"><h1 id="deal_title">'+deal_title+'</h1><p id="deal_description">'+deal_description+'</p></div></div>';
+                        $("#pagearea").append(segment);
+                    }
+                },
+                error: function(err){
+                    alert(err.status);
+                }
+            });
+        });
+                
+        $("#notification").click(function(){
+            cordova.plugins.notification.local.requestPermission(function (granted) {
+                cordova.plugins.notification.local.schedule({
+                    title: 'Test Success',
+                    text: 'Thats pretty easy...',
+                    foreground: true
+                });                
+            }); 
+        });
+                
+        $("#location").click(function(){
+            GetCurrentLocation();
+        });
+        
+        
+    </script>
+    
+</html>
