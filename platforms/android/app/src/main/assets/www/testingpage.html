@@ -52,7 +52,8 @@
     <script>
 
         var fbLoginSuccess = function (userData) {
-            alert("UserInfo: ", userData);
+            //alert(JSON.stringify (userData));
+            alert (userData.status);
         }
 
         $("#fb").click(function(){

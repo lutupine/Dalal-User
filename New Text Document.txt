@@ -1,0 +1,9 @@
+cordova plugin add cordova-plugin-facebook4 --save --variable APP_ID="195612644565128" --variable APP_NAME="OfferWall"
+      
+keytool -exportcert -alias androiddebugkey -keystore "C:\Users\hazam\.android\debug.keystore" | "C:\OpenSSL\bin\openssl" sha1 -binary | "C:\OpenSSL\bin\openssl" base64
+      
+0AMuYllZIq8ed6ZJReeipAlg6aQ=
+
+CM9Nzy0w1Yc3pqaSCuh3FwdmukM=
+
+cordova plugin add cordova-plugin-facebook4 --save --variable APP_ID="195612644565128" --variable APP_NAME="OfferWall"
