@@ -15,15 +15,6 @@ function onSuccess(position) {
         'Speed: '             + position.coords.speed             + '\n' +
         'Timestamp: '         + position.timestamp                + '\n'
     );
-    cordova.plugins.notification.local.schedule({
-        title: 'Welcome to'+position.coords.latitude+'  '+position.coords.longitude,
-        trigger: {
-            type: 'location',
-            center: [position.coords.latitude , position.coords.longitude],
-            radius: 25,
-            notifyOnEntry: true
-        }
-    });
 }
 
 // onError Callback receives a PositionError object

@@ -7,7 +7,6 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/myscript.js"></script>
-        <script src="js/locationservices.js"></script>
         <script src="cordova.js"></script>
         <link rel="stylesheet" href="css/mystyles.css">
         <title>Blank App</title>
@@ -26,12 +25,6 @@
             
             
         </div>
-        <button class="bottom_static" id="notification">
-            Notification
-        </button>
-        <button class="bottom_static" id="location">
-            Location
-        </button>
         <button class="bottom_static" id="home">
             Home
         </button>
@@ -42,20 +35,6 @@
                 
         $("#home").click(function(){
             window.location.href = "index.html";
-        });
-        
-        $("#notification").click(function(){
-            cordova.plugins.notification.local.requestPermission(function (granted) {
-                cordova.plugins.notification.local.schedule({
-                    title: 'My first notification',
-                    text: 'Thats pretty easy...',
-                    foreground: true
-                });                
-            });                    
-        });
-
-        $("#location").click(function(){
-            GetCurrentLocation ();                   
         });
         
         $(document).ready (function(){
