@@ -7,13 +7,10 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-geolocation": {
+    "cordova-plugin-badge": {
       "PACKAGE_NAME": "com.piprastudio.dalal"
     },
-    "cordova-plugin-local-notification": {
-      "PACKAGE_NAME": "com.piprastudio.dalal"
-    },
-    "cordova-plugin-whitelist": {
+    "cordova-plugin-device": {
       "PACKAGE_NAME": "com.piprastudio.dalal"
     },
     "cordova-plugin-facebook4": {
@@ -21,14 +18,16 @@
       "APP_NAME": "OfferWall",
       "ANDROID_SDK_VERSION": "4.+",
       "PACKAGE_NAME": "com.piprastudio.dalal"
-    }
-  },
-  "dependent_plugins": {
-    "cordova-plugin-badge": {
+    },
+    "cordova-plugin-geolocation": {
       "PACKAGE_NAME": "com.piprastudio.dalal"
     },
-    "cordova-plugin-device": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.piprastudio.dalal"
+    },
+    "cordova-plugin-local-notification": {
       "PACKAGE_NAME": "com.piprastudio.dalal"
     }
-  }
+  },
+  "dependent_plugins": {}
 }

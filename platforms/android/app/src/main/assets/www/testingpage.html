@@ -58,6 +58,15 @@
             set location notification
         </button>
 
+        <form action="#">
+            time in seconds : 
+            <input id="timevalue" type="text" value="10"><br>
+        </form>
+
+        <button class="bottom_static" id="settime">
+            set timed notification
+        </button>
+
     </body>
     
     <script>
@@ -172,6 +181,15 @@
                     radius: 25,
                     notifyOnEntry: true,
                 }
+            });
+        });
+
+        $("#settime").click(function (){
+            var x = $("#timevalue").val();
+            alert('trigger in : '+x);            
+            cordova.plugins.notification.local.schedule({
+                title: 'Triggered at time',
+                trigger: { in: x, unit: 'second' }
             });
         });
                 

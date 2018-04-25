@@ -17,6 +17,14 @@ module.exports = [
     ]
   },
   {
+    "id": "cordova-plugin-facebook4.FacebookConnectPlugin",
+    "file": "plugins/cordova-plugin-facebook4/www/facebook-native.js",
+    "pluginId": "cordova-plugin-facebook4",
+    "clobbers": [
+      "facebookConnectPlugin"
+    ]
+  },
+  {
     "id": "cordova-plugin-geolocation.geolocation",
     "file": "plugins/cordova-plugin-geolocation/www/android/geolocation.js",
     "pluginId": "cordova-plugin-geolocation",
@@ -55,14 +63,6 @@ module.exports = [
       "cordova.plugins.notification.local.core",
       "plugin.notification.local.core"
     ]
-  },
-  {
-    "id": "cordova-plugin-facebook4.FacebookConnectPlugin",
-    "file": "plugins/cordova-plugin-facebook4/www/facebook-native.js",
-    "pluginId": "cordova-plugin-facebook4",
-    "clobbers": [
-      "facebookConnectPlugin"
-    ]
   }
 ];
 module.exports.metadata = 
@@ -70,10 +70,10 @@ module.exports.metadata =
 {
   "cordova-plugin-badge": "0.8.7",
   "cordova-plugin-device": "2.0.2",
+  "cordova-plugin-facebook4": "2.0.0",
   "cordova-plugin-geolocation": "4.0.1",
-  "cordova-plugin-local-notification": "0.9.0-beta.2",
   "cordova-plugin-whitelist": "1.3.3",
-  "cordova-plugin-facebook4": "2.0.0"
+  "cordova-plugin-local-notification": "0.9.0-beta.2"
 };
 // BOTTOM OF METADATA
 });
