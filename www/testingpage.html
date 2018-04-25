@@ -44,7 +44,20 @@
         </button>
         
         <button class="bottom_static" id="fb">
-                fb login
+            fb login
+        </button>
+
+        <form action="#">
+            X : 
+            <input id="xcor" type="text" value="0"><br>
+            Y : 
+            <input id="ycor" type="text" value="0"><br>
+            Range : 
+            <input id="range" type="text" value="10"><br>
+        </form>
+
+        <button class="bottom_static" id="setnotification">
+            set location notification
         </button>
 
     </body>
@@ -147,6 +160,22 @@
                     foreground: true
                 });                
             }); 
+        });
+
+       $("#setnotification").click(function (){
+            var x = $("#xcor").val();
+            var y = $("#ycor").val();;
+            var arearange = $("#range").val();;
+            alert('x: '+x+' y: '+y);            
+            cordova.plugins.notification.local.schedule({
+                title: 'Welcome to' + x + ' ' + y,
+                trigger: {
+                    type: 'location',
+                    center: [x , y],
+                    radius: arearange,
+                    notifyOnEntry: true,
+                }
+            });
         });
                 
         $("#location").click(function(){

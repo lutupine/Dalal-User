@@ -15,6 +15,9 @@ function onSuccess(position) {
         'Speed: '             + position.coords.speed             + '\n' +
         'Timestamp: '         + position.timestamp                + '\n'
     );
+    $("#xcor").val(position.coords.latitude);
+    $("#ycor").val(position.coords.longitude);
+    $("#range").val('10');
 }
 
 // onError Callback receives a PositionError object

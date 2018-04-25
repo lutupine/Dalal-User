@@ -224,27 +224,7 @@
             localStorage.clear();
             getsaveddata();
             gethotdeals();
-            getfeatureddeals ();
-            var x = 23.7580;
-            var y = 90.3740;            
-            cordova.plugins.notification.local.schedule({
-                title: 'Welcome to Mango International',
-                trigger: {
-                    type: 'location',
-                    center: [x , y],
-                    radius: 25,
-                    notifyOnEntry: true,
-                }
-            });
-            cordova.plugins.notification.local.schedule({
-                title: 'Mango International wishes you a good day',
-                trigger: {
-                    type: 'location',
-                    center: [x , y],
-                    radius: 25,
-                    notifyOnExit: true,
-                }
-            });
+            getfeatureddeals ();            
         });
         
         initializeslider ();
@@ -275,6 +255,7 @@
         $("#testing").click(function(){
             window.location.href = "testingpage.html";
         });
+
     </script>
     
 </html>
