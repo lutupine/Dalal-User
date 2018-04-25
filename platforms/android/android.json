@@ -134,11 +134,11 @@
           "/resources": [
             {
               "xml": "<string name=\"fb_app_id\">195612644565128</string>",
-              "count": 19
+              "count": 20
             },
             {
               "xml": "<string name=\"fb_app_name\">OfferWall</string>",
-              "count": 19
+              "count": 20
             }
           ]
         }

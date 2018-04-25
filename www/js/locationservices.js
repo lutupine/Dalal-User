@@ -17,7 +17,6 @@ function onSuccess(position) {
     );
     $("#xcor").val(position.coords.latitude);
     $("#ycor").val(position.coords.longitude);
-    $("#range").val('10');
 }
 
 // onError Callback receives a PositionError object

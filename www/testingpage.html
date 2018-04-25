@@ -52,8 +52,6 @@
             <input id="xcor" type="text" value="0"><br>
             Y : 
             <input id="ycor" type="text" value="0"><br>
-            Range : 
-            <input id="range" type="text" value="10"><br>
         </form>
 
         <button class="bottom_static" id="setnotification">
@@ -164,15 +162,14 @@
 
        $("#setnotification").click(function (){
             var x = $("#xcor").val();
-            var y = $("#ycor").val();;
-            var arearange = $("#range").val();;
+            var y = $("#ycor").val();
             alert('x: '+x+' y: '+y);            
             cordova.plugins.notification.local.schedule({
                 title: 'Welcome to' + x + ' ' + y,
                 trigger: {
                     type: 'location',
                     center: [x , y],
-                    radius: arearange,
+                    radius: 25,
                     notifyOnEntry: true,
                 }
             });
