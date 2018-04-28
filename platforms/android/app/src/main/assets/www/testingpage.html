@@ -8,7 +8,7 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="cordova.js"></script>
-        <script src="js/locationservices.js"></script>
+        <script src="js/pluginservices.js"></script>
         <link rel="stylesheet" href="css/mystyles.css">
         <title>OfferApp</title>
     </head>
@@ -58,6 +58,10 @@
             set location notification
         </button>
 
+        <button class="bottom_static" id="testbackgroundmode">
+            background
+        </button>
+
         <form action="#">
             time in seconds : 
             <input id="timevalue" type="text" value="10"><br>
@@ -72,9 +76,12 @@
     <script>
 
         var fbLoginSuccess = function (userData) {
-            //alert(JSON.stringify (userData));
-            alert (userData.status);
+            alert (userData.authResponse.userID);
         }
+
+        $("#testbackgroundmode").click(function(){       
+            
+        });
 
         $("#fb").click(function(){
             facebookConnectPlugin.login(["public_profile"], fbLoginSuccess,
@@ -160,41 +167,39 @@
         });
                 
         $("#notification").click(function(){
-            cordova.plugins.notification.local.requestPermission(function (granted) {
-                cordova.plugins.notification.local.schedule({
-                    title: 'Test Success',
-                    text: 'Thats pretty easy...',
-                    foreground: true
-                });                
-            }); 
+            cordova.plugins.notification.local.schedule({
+                title: 'Test notification',
+                text: 'Working fine',
+                foreground: true
+            });
         });
 
-       $("#setnotification").click(function (){
-            var x = $("#xcor").val();
-            var y = $("#ycor").val();
-            alert('x: '+x+' y: '+y);            
+        $("#setnotification").click(function (){
+            var xc = $("#xcor").val();
+            var yc = $("#ycor").val();
             cordova.plugins.notification.local.schedule({
-                title: 'Welcome to' + x + ' ' + y,
+                title: 'Welcome to : '+xc+' '+yc,
                 trigger: {
                     type: 'location',
-                    center: [x , y],
-                    radius: 25,
-                    notifyOnEntry: true,
+                    text: 'Working fine',
+                    center: [xc, yc],
+                    radius: 15,
+                    notifyOnEntry: true
                 }
             });
         });
 
         $("#settime").click(function (){
-            var x = $("#timevalue").val();
-            alert('trigger in : '+x);            
+            var time_value = $("#timevalue").val();
             cordova.plugins.notification.local.schedule({
-                title: 'Triggered at time',
-                trigger: { in: x, unit: 'second' }
+                title: 'Timed notification',
+                text: 'Working fine',
+                trigger: { in: time_value, unit: 'second' }
             });
         });
                 
         $("#location").click(function(){
-            GetCurrentLocation();
+            GetCurrentLocation ();
         });
         
         

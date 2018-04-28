@@ -1,27 +1,27 @@
 {
-  "_from": "cordova-plugin-facebook4@^2.0.0",
-  "_id": "cordova-plugin-facebook4@2.0.0",
+  "_from": "cordova-plugin-facebook4",
+  "_id": "cordova-plugin-facebook4@2.0.1",
   "_inBundle": false,
-  "_integrity": "sha512-hqfHjFS9fYc2kRdxfikV1b9n73nRAU0EIVJaVmzWvG989/yM0ZyK65f7YyUc3B3BMu3mbCwMujTWy2EklTaLBA==",
+  "_integrity": "sha512-7pyk0AlggPH+yFJ/+h4eATtLAAyRgtvsxCdSehsDE9neYuCodTaYDhwr8ST5DK9H8xQ1xnuwOsRaFk2JyGWfww==",
   "_location": "/cordova-plugin-facebook4",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "tag",
     "registry": true,
-    "raw": "cordova-plugin-facebook4@^2.0.0",
+    "raw": "cordova-plugin-facebook4",
     "name": "cordova-plugin-facebook4",
     "escapedName": "cordova-plugin-facebook4",
-    "rawSpec": "^2.0.0",
+    "rawSpec": "",
     "saveSpec": null,
-    "fetchSpec": "^2.0.0"
+    "fetchSpec": "latest"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-facebook4/-/cordova-plugin-facebook4-2.0.0.tgz",
-  "_shasum": "f48a9f67f0028dc1d26821bb1e4e93bfbfd6fb32",
-  "_spec": "cordova-plugin-facebook4@^2.0.0",
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-facebook4/-/cordova-plugin-facebook4-2.0.1.tgz",
+  "_shasum": "8b28823a09735e83cec32677dbade6441db708e8",
+  "_spec": "cordova-plugin-facebook4",
   "_where": "E:\\WORK\\02.PHONEGAP\\Projects\\Dalal",
   "bugs": {
     "url": "https://github.com/jeduan/cordova-plugin-facebook4/issues"
@@ -55,5 +55,5 @@
     "type": "git",
     "url": "git+https://github.com/jeduan/cordova-plugin-facebook4.git"
   },
-  "version": "2.0.0"
+  "version": "2.0.1"
 }

@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/myscript.js"></script>
+        <script src="js/apiservices.js"></script>
         <script src="cordova.js"></script>
         <link rel="stylesheet" href="css/mystyles.css">
         <title>Blank App</title>
@@ -36,11 +36,11 @@
         $("#home").click(function(){
             window.location.href = "index.html";
         });
-        
-        $(document).ready (function(){
+
+        document.addEventListener('deviceready', function () {            
             getsaveddata();
             getcategories ();
-        });
+        }, false);
         
     </script>
     
