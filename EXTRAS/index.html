@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/swiper.min.css">
+        <link rel="stylesheet" href="css/mystyles.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/apiservices.js"></script>
+        <script src="js/pluginservices.js"></script>
+        <script src="cordova.js"></script>
+        <title>Dalal</title>
+    </head>
+        
+    <body>
+        <div class="container-fluid no-margin-padding">
+            
+            <div class="row fixed-top header-block no-margin-padding" id="header-block">
+
+                <div class="col-xs-10 no-margin-padding">
+                    <img class="app-icon" src="res/pimage.jpg">
+                    <p class="app-name">CodeName-DALAL</p>
+                </div>
+
+                <div class="col-xs-2 no-margin-padding">
+                    <button class="header-button" data-toggle="collapse" id="main-menu-button" data-target="#hiden-main-menu">
+                        <img class="button-image" src="res/menuicon.png">
+                    </button>
+                </div>
+
+                <div class="col-xs-12 no-margin-padding collapse text-center" id="hiden-main-menu">
+                    <ul class="full-width-row no-margin-padding menu-style">
+                    <li><button class="sub-menu-buttons">aaaaaaaaaaaaaaaaaaaaaa</button></li>
+                    <li><button class="sub-menu-buttons">bbbbbbbbbbbbbbbbbbbbb</button></li>
+                    <li><button class="sub-menu-buttons">cbbbbbbbbbbbbb</button></li>
+                    </ul>
+                </div>
+
+            </div>            
+            
+            <div class="row no-margin-padding" id="head-banner-block">
+
+                <div class="head-space"></div>
+
+                <div class="head-banner">
+                <marquee>
+                scrolling text blah blah very long string scrolling text blah blah very long string scrolling text blah blah very long string
+                </marquee>
+                </div>
+
+            </div>
+            
+            <div class="row no-margin-padding" id="home-block"> 
+
+                <div class="col-sm-6 no-margin-padding" id="hot-deals">
+                    <p class="title-text">Hot Deals</p>
+                    
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            
+                            <div class="swiper-slide">
+                            <div class="container-fluid deal-container hot-deal-container">
+                            <div class="col-xs-3 no-margin-padding">
+                            <img class="deal-image" src="res/pimage.jpg">
+                            </div>
+                            <div class="col-xs-8 no-margin-padding">
+                            <p class="title-text deal-title hot-deal-title">Deal Title</p>
+                            <p class="deal-description hot-deal-description">Deal DescriptionDeal DescriptionDeal DescriptionDeal.</p>                               
+                            </div>
+                            <div class="col-xs-1 no-margin-padding">
+                            <img class="button-overlay-image" src="res/3dotmenuicon.png"> 
+                            </div>
+                            </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                            <div class="container-fluid deal-container hot-deal-container">
+                            <div class="col-xs-3 no-margin-padding">
+                            <img class="deal-image" src="res/pimage.jpg">
+                            </div>
+                            <div class="col-xs-8 no-margin-padding">
+                            <p class="title-text deal-title hot-deal-title">Deal Title</p>
+                            <p class="deal-description hot-deal-description">Deal DescriptionDeal DescriptionDeal DescriptionDeal.</p>                               
+                            </div>
+                            <div class="col-xs-1 no-margin-padding">
+                            <img class="button-overlay-image" src="res/3dotmenuicon.png"> 
+                            </div>
+                            </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                            <div class="container-fluid deal-container hot-deal-container">
+                            <div class="col-xs-3 no-margin-padding">
+                            <img class="deal-image" src="res/pimage.jpg">
+                            </div>
+                            <div class="col-xs-8 no-margin-padding">
+                            <p class="title-text deal-title hot-deal-title">Deal Title</p>
+                            <p class="deal-description hot-deal-description">Deal DescriptionDeal DescriptionDeal DescriptionDeal.</p>                               
+                            </div>
+                            <div class="col-xs-1 no-margin-padding">
+                            <img class="button-overlay-image" src="res/3dotmenuicon.png"> 
+                            </div>
+                            </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                            <div class="container-fluid deal-container hot-deal-container">
+                            <div class="col-xs-3 no-margin-padding">
+                            <img class="deal-image" src="res/pimage.jpg">
+                            </div>
+                            <div class="col-xs-8 no-margin-padding">
+                            <p class="title-text deal-title hot-deal-title">Deal Title</p>
+                            <p class="deal-description hot-deal-description">Deal DescriptionDeal DescriptionDeal DescriptionDeal.</p>                               
+                            </div>
+                            <div class="col-xs-1 no-margin-padding">
+                            <img class="button-overlay-image" src="res/3dotmenuicon.png"> 
+                            </div>
+                            </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                            <div class="container-fluid deal-container hot-deal-container">
+                            <div class="col-xs-3 no-margin-padding">
+                            <img class="deal-image" src="res/pimage.jpg">
+                            </div>
+                            <div class="col-xs-8 no-margin-padding">
+                            <p class="title-text deal-title hot-deal-title">Deal Title</p>
+                            <p class="deal-description hot-deal-description">Deal DescriptionDeal DescriptionDeal DescriptionDeal.</p>                               
+                            </div>
+                            <div class="col-xs-1 no-margin-padding">
+                            <img class="button-overlay-image" src="res/3dotmenuicon.png"> 
+                            </div>
+                            </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                            <div class="container-fluid deal-container hot-deal-container">
+                            <div class="col-xs-3 no-margin-padding">
+                            <img class="deal-image" src="res/pimage.jpg">
+                            </div>
+                            <div class="col-xs-8 no-margin-padding">
+                            <p class="title-text deal-title hot-deal-title">Deal Title</p>
+                            <p class="deal-description hot-deal-description">Deal DescriptionDeal DescriptionDeal DescriptionDeal.</p>                               
+                            </div>
+                            <div class="col-xs-1 no-margin-padding">
+                            <img class="button-overlay-image" src="res/3dotmenuicon.png"> 
+                            </div>
+                            </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                            <div class="container-fluid deal-container hot-deal-container">
+                            <div class="col-xs-3 no-margin-padding">
+                            <img class="deal-image" src="res/pimage.jpg">
+                            </div>
+                            <div class="col-xs-8 no-margin-padding">
+                            <p class="title-text deal-title hot-deal-title">Deal Title</p>
+                            <p class="deal-description hot-deal-description">Deal DescriptionDeal DescriptionDeal DescriptionDeal.</p>                               
+                            </div>
+                            <div class="col-xs-1 no-margin-padding">
+                            <img class="button-overlay-image" src="res/3dotmenuicon.png"> 
+                            </div>
+                            </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                            <div class="container-fluid deal-container hot-deal-container">
+                            <div class="col-xs-3 no-margin-padding">
+                            <img class="deal-image" src="res/pimage.jpg">
+                            </div>
+                            <div class="col-xs-8 no-margin-padding">
+                            <p class="title-text deal-title hot-deal-title">Deal Title</p>
+                            <p class="deal-description hot-deal-description">Deal DescriptionDeal DescriptionDeal DescriptionDeal.</p>                               
+                            </div>
+                            <div class="col-xs-1 no-margin-padding">
+                            <img class="button-overlay-image" src="res/3dotmenuicon.png"> 
+                            </div>
+                            </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                            <div class="container-fluid deal-container hot-deal-container">
+                            <div class="col-xs-3 no-margin-padding">
+                            <img class="deal-image" src="res/pimage.jpg">
+                            </div>
+                            <div class="col-xs-8 no-margin-padding">
+                            <p class="title-text deal-title hot-deal-title">Deal Title</p>
+                            <p class="deal-description hot-deal-description">Deal DescriptionDeal DescriptionDeal DescriptionDeal.</p>                               
+                            </div>
+                            <div class="col-xs-1 no-margin-padding">
+                            <img class="button-overlay-image" src="res/3dotmenuicon.png"> 
+                            </div>
+                            </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                            <div class="container-fluid deal-container hot-deal-container">
+                            <div class="col-xs-3 no-margin-padding">
+                            <img class="deal-image" src="res/pimage.jpg">
+                            </div>
+                            <div class="col-xs-8 no-margin-padding">
+                            <p class="title-text deal-title hot-deal-title">Deal Title</p>
+                            <p class="deal-description hot-deal-description">Deal DescriptionDeal DescriptionDeal DescriptionDeal.</p>                               
+                            </div>
+                            <div class="col-xs-1 no-margin-padding">
+                            <img class="button-overlay-image" src="res/3dotmenuicon.png"> 
+                            </div>
+                            </div>
+                            </div>
+                                                                                                                                                                                                        
+                        </div>
+                        
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>                
+                    </div>            
+                </div>
+                    
+                <div class="col-sm-6 no-margin-padding" id="featured-deals">
+                    
+                    <p class="title-text">Featured Deals</p>
+                    
+                    <div class="container-fluid deal-container featured-deal-container">
+                    <div class="col-xs-3 no-margin-padding">
+                    <img class="deal-image" src="res/pimage.jpg">
+                    </div>
+                    <div class="col-xs-8 no-margin-padding">
+                    <p class="title-text deal-title featured-deal-title">Deal Title</p>
+                    <p class="deal-description featured-deal-description">Deal DescriptionDeal DescriptionDeal DescriptionDeal.</p>
+                    </div>
+                    <div class="col-xs-1 no-margin-padding">
+                    <img class="button-overlay-image" src="res/3dotmenuicon.png">
+                    </div>
+                    </div>
+
+                    <div class="container-fluid deal-container featured-deal-container">
+                    <div class="col-xs-3 no-margin-padding">
+                    <img class="deal-image" src="res/pimage.jpg">
+                    </div>
+                    <div class="col-xs-8 no-margin-padding">
+                    <p class="title-text deal-title featured-deal-title">Deal Title</p>
+                    <p class="deal-description featured-deal-description">Deal DescriptionDeal DescriptionDeal DescriptionDeal.</p>
+                    </div>
+                    <div class="col-xs-1 no-margin-padding">
+                    <img class="button-overlay-image" src="res/3dotmenuicon.png">
+                    </div>
+                    </div>
+
+                    <div class="container-fluid deal-container featured-deal-container">
+                    <div class="col-xs-3 no-margin-padding">
+                    <img class="deal-image" src="res/pimage.jpg">
+                    </div>
+                    <div class="col-xs-8 no-margin-padding">
+                    <p class="title-text deal-title featured-deal-title">Deal Title</p>
+                    <p class="deal-description featured-deal-description">Deal DescriptionDeal DescriptionDeal DescriptionDeal.</p>
+                    </div>
+                    <div class="col-xs-1 no-margin-padding">
+                    <img class="button-overlay-image" src="res/3dotmenuicon.png">
+                    </div>
+                    </div>
+
+                    <div class="container-fluid deal-container featured-deal-container">
+                    <div class="col-xs-3 no-margin-padding">
+                    <img class="deal-image" src="res/pimage.jpg">
+                    </div>
+                    <div class="col-xs-8 no-margin-padding">
+                    <p class="title-text deal-title featured-deal-title">Deal Title</p>
+                    <p class="deal-description featured-deal-description">Deal DescriptionDeal DescriptionDeal DescriptionDeal.</p>
+                    </div>
+                    <div class="col-xs-1 no-margin-padding">
+                    <img class="button-overlay-image" src="res/3dotmenuicon.png">
+                    </div>
+                    </div>
+
+                    <div class="container-fluid deal-container featured-deal-container">
+                    <div class="col-xs-3 no-margin-padding">
+                    <img class="deal-image" src="res/pimage.jpg">
+                    </div>
+                    <div class="col-xs-8 no-margin-padding">
+                    <p class="title-text deal-title featured-deal-title">Deal Title</p>
+                    <p class="deal-description featured-deal-description">Deal DescriptionDeal DescriptionDeal DescriptionDeal.</p>
+                    </div>
+                    <div class="col-xs-1 no-margin-padding">
+                    <img class="button-overlay-image" src="res/3dotmenuicon.png">
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <div class="head-space"></div>
+            
+            </div>
+
+            <div class="row no-margin-padding" id="hot-block"> 
+
+                <div class="col-sm-6 no-margin-padding" id="hot-deals">
+                    <p class="title-text">Hot Deals</p>
+                    
+                    <div class="container-fluid deal-container featured-deal-container">
+                    <div class="col-xs-3 no-margin-padding">
+                    <img class="deal-image" src="res/pimage.jpg">
+                    </div>
+                    <div class="col-xs-8 no-margin-padding">
+                    <p class="title-text deal-title featured-deal-title">Deal Title</p>
+                    <p class="deal-description featured-deal-description">Deal DescriptionDeal DescriptionDeal DescriptionDeal.</p>
+                    </div>
+                    <div class="col-xs-1 no-margin-padding">
+                    <img class="button-overlay-image" src="res/3dotmenuicon.png">
+                    </div>
+                    </div>
+                               
+                </div>
+
+                <div class="head-space"></div>
+            
+            </div>
+
+            <div class="row no-margin-padding" id="featured-block"> 
+                    
+                <div class="col-sm-6 no-margin-padding" id="featured-deals">
+                    
+                    <p class="title-text">Featured Deals</p>
+                    
+                    <div class="container-fluid deal-container featured-deal-container">
+                    <div class="col-xs-3 no-margin-padding">
+                    <img class="deal-image" src="res/pimage.jpg">
+                    </div>
+                    <div class="col-xs-8 no-margin-padding">
+                    <p class="title-text deal-title featured-deal-title">Deal Title</p>
+                    <p class="deal-description featured-deal-description">Deal DescriptionDeal DescriptionDeal DescriptionDeal.</p>
+                    </div>
+                    <div class="col-xs-1 no-margin-padding">
+                    <img class="button-overlay-image" src="res/3dotmenuicon.png">
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <div class="head-space"></div>
+            
+            </div>
+
+            <div class="row no-margin-padding" id="categories-block"> 
+
+                <div class="col-sm-6 no-margin-padding" id="categories">
+                    <p class="title-text">Categories</p>
+                    
+                    <div class="container-fluid deal-container featured-deal-container">
+                    <div class="col-xs-3 no-margin-padding">
+                    <img class="deal-image" src="res/pimage.jpg">
+                    </div>
+                    <div class="col-xs-8 no-margin-padding">
+                    <p class="title-text deal-title featured-deal-title">Deal Title</p>
+                    <p class="deal-description featured-deal-description">Deal DescriptionDeal DescriptionDeal DescriptionDeal.</p>
+                    </div>
+                    <div class="col-xs-1 no-margin-padding">
+                    <img class="button-overlay-image" src="res/3dotmenuicon.png">
+                    </div>
+                    </div> 
+                             
+                </div>
+
+                <div class="head-space"></div>
+            
+            </div>
+
+            <div class="row no-margin-padding" id="locality-block"> 
+
+                <div class="col-sm-6 no-margin-padding" id="locality">
+                    <p class="title-text">Deals Nearby</p>
+
+                    <div class="maps" id="locality-map"></div>
+                    
+                    <div class="container-fluid deal-container featured-deal-container">
+                    <div class="col-xs-3 no-margin-padding">
+                    <img class="deal-image" src="res/pimage.jpg">
+                    </div>
+                    <div class="col-xs-8 no-margin-padding">
+                    <p class="title-text deal-title featured-deal-title">Deal Title</p>
+                    <p class="deal-description featured-deal-description">Deal DescriptionDeal DescriptionDeal DescriptionDeal.</p>
+                    </div>
+                    <div class="col-xs-1 no-margin-padding">
+                    <img class="button-overlay-image" src="res/3dotmenuicon.png">
+                    </div>
+                    </div> 
+                             
+                </div>
+
+                <div class="head-space"></div>
+            
+            </div>
+            
+            <div class="row fixed-bottom footer-block no-margin-padding" id="footer-block">
+
+                <div class="col-xs-2 no-margin-padding text-center">
+                <button class="footer-button" id="home-button">
+                <img class="button-image" src="res/homeicon.png">
+                </button>
+                </div>
+                
+                <div class="col-xs-3 no-margin-padding"></div>
+
+                <div class="col-xs-2 no-margin-padding">
+                <div class="no-margin-padding text-center">
+                <button class="footer-button" data-toggle="collapse" id="search-button" data-target="#hiden-search-menu">
+                <img class="button-image" src="res/searchicon.png">
+                </button>
+                </div>
+                </div>
+
+                <div class="col-xs-3 no-margin-padding"></div>
+
+                <div class="col-xs-2 no-margin-padding text-center">
+                <button class="footer-button" id="locality-button">
+                <img class="button-image" src="res/locationicon.png">
+                </button>
+                </div>
+
+                <div class="col-xs-12 no-margin-padding collapse text-center" id="hiden-search-menu">
+                    <ul class="full-width-row no-margin-padding menu-style">
+                    <li><p class="full-width-row text-center" >Search Deals</p></li>
+                    <li class="divider"></li>
+                    <li><button class="sub-menu-buttons" id="hot-button">Hot Deals</button></li>
+                    <li><button class="sub-menu-buttons" id="featured-button">Featured Deals</button></li>
+                    <li><button class="sub-menu-buttons" id="categories-button">Categories</button></li>
+                    </ul>
+                </div>
+            
+            </div>
+
+            <div class="no-margin-padding screen-overlay" id="screen-overlay-button">
+            </div>
+
+        </div>          
+
+    </body>
+    
+    <script>
+        
+        initializeslider ();
+
+        document.addEventListener('deviceready', function () {
+            //localStorage.clear();
+            getsaveddata();
+            //gethotdeals();
+            //getfeatureddeals ();
+            //onBackKeyDown ();
+        }, false);
+                
+        function initializeslider ()
+        {
+            var swiper = new Swiper('.swiper-container', {
+                loop: true,
+                autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+                },
+                pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+                },
+            });
+        }
+
+    </script>
+    
+</html>
