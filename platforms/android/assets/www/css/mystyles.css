@@ -2,15 +2,28 @@
         common styles
         */
 
-        /* color codes 
-        bg FAFFB8
-        pr C5F0A4
-        sn 35B0AB
-        tr 226B80       
+        /* color codes 2
+        bg F4F4F4
+        pr 6DECB9
+        sn 11999E
+        tr 3C3C3C       
         */
 
         :root {
-            --background-color: #ffffff;
+            --background-color1: #F4F4F4;
+            --background-color2: #6DECB9;
+            --background-color3: #11999E;
+            --foreground-color1: #3C3C3C;
+
+            --foreground-color2: #11999E;
+            --foreground-color3: #6DECB9;
+            --font-color1: #3C3C3C;
+            --font-color2: #F4F4F4;
+            --font-color3: #11999E;            
+            --font-color4: #3C3C3C;            
+            --font-color5: #6DECB9;
+            --font-color6: #F4F4F4;
+
             -webkit-user-select: none;
             -khtml-user-select: none;
             -moz-user-select: none;
@@ -27,7 +40,7 @@
         }
 
         body {
-            background: var(--background-color);
+            background: var(--background-color1);
             margin: 0%;
             padding: 0%;
         }
@@ -38,7 +51,11 @@
         }
         p {
             font-family: 'Franklin Gothic Medium';
-            color: #273238;
+            color: var(--font-color1);
+        }
+
+        .store-id {
+            color: var(--font-color5);
         }
 
         .button-overlay-image {
@@ -49,6 +66,10 @@
             margin-top: 70%;
             margin-bottom: 70%;
         }
+        .show-deal-button {
+            background-color: transparent;
+        }
+
         .fixed-top {
             position: fixed;
             left: 0;
@@ -66,6 +87,8 @@
         .full-width-row {
             width: 100%;
             height: auto;
+            padding: 0%;
+            margin: 0%;
         }       
         .no-margin-padding {            
             margin: 0;
@@ -96,13 +119,13 @@
         */
 
         .hot-deal-container {
-            background-color: #ffd741 !important;
+            background-color: var(--background-color2) !important;
         } 
         .hot-deal-title {
-            color: #f0182d !important;
+            color: var(--font-color3) !important;
         }
         .hot-deal-description {
-            color: #273238 !important;
+            color: var(--font-color4) !important;
         }
 
         /*
@@ -110,13 +133,13 @@
         */
 
         .featured-deal-container {
-            background-color: #607d8d !important;
+            background-color: var(--background-color3) !important;
         } 
         .featured-deal-title {
-            color: #ffd741 !important;
+            color: var(--font-color5) !important;
         }
         .featured-deal-description {
-            color: #ffffff !important;
+            color: var(--font-color6) !important;
         }
         
         /*
@@ -129,8 +152,8 @@
         div.head-banner {
             width: 100%;
             height: 4rem;
-            background-color: #607d8d;
-            color: #ffd741;
+            background-color: var(--background-color3);
+            color: var(--font-color5);
             font-size: 2rem;
             font-weight: 500;
             text-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.5);
@@ -144,14 +167,12 @@
         .deal-container {       
             margin: .5rem;
             padding: 0%;
-            background-color: #DBE2EF;
+            background-color: var(--background-color1);
             box-shadow: 0 0 .5rem .25rem rgba(0, 0, 0, 0.25);
-            animation-name: slide-left;
-            animation-duration: 2s;
         }
         .deal-image {
             border: solid;
-            border-color: white;
+            border-color: var(--background-color1);
             border-width: .2rem;            
             border-radius: 50%;
             width: 90%;
@@ -178,7 +199,7 @@
         */
        
         .header-block {
-            background: #273238 !important;
+            background: var(--foreground-color1) !important;
             margin: 0% !important;
             padding: .5rem !important;
             height: auto !important;
@@ -203,7 +224,7 @@
             float: right !important;        
             width: auto !important;
             height: 4rem !important;
-            background-color: white !important;
+            background-color: var(--background-color1) !important;
             padding: 0% !important;
             margin: .5rem !important;
         }
@@ -213,7 +234,7 @@
         */
 
         .footer-block {
-            background: #273238 !important;
+            background: var(--foreground-color1) !important;
             margin: 0% !important;
             padding: .5rem !important;
             height: auto !important;
@@ -225,7 +246,7 @@
             border-radius: 50% !important;
             width: auto !important;
             height: 4rem !important;
-            background-color: #607d8d !important;
+            background-color: var(--foreground-color2) !important;
             padding: 0% !important;
             margin: .5rem !important;
         }
@@ -241,7 +262,7 @@
         .menu-style {
             padding: 1rem;
             border-width: 0;
-            background-color: #ffd741;
+            background-color: var(--foreground-color3);
         }
 
         .screen-overlay {
@@ -255,8 +276,43 @@
         }
 
         .maps {
-            height: 350px;
+            height: 300px;
             width: 100%;
             background-color: grey;
+        }
+
+        .deal-maps {
+            height: 250px;
+            width: 100%;
+            background-color: grey;
+        }
+
+        .deal-display {            
+            margin: .5rem;
+            padding: 0%;
+            background-color: var(--background-color3);
+            box-shadow: 0 0 .5rem .25rem rgba(0, 0, 0, 0.25);
+        }
+
+        .deal-badge {
+            margin: 0;
+            padding: 0;
+            max-height: 25px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .rating-bg {
+            position: absolute;
+            top: -15%;
+            left: 40%;
+            color: var(--background-color1);
+        }
+
+        .get-deal-button {
+            background-color: var(--background-color2);
+            padding: .25rem;
+            font-size: 1.5rem;
+            font-weight: bold;
         }
 
